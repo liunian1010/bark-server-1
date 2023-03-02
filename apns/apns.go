@@ -29,8 +29,8 @@ type PushMessage struct {
 
 const (
 	topic          = "me.fin.bark"
-	keyID          = "LH4T9V5U4R"
-	teamID         = "5U8LBRXG3A"
+	keyID          = "MZ326663FA"
+	teamID         = "8DY87T74A5"
 	PayloadMaximum = 4096
 )
 
@@ -71,7 +71,7 @@ func init() {
 			},
 			Timeout: apns2.HTTPClientTimeout,
 		},
-		Host: apns2.HostProduction,
+		Host: apns2.HostDevelopment,
 	}
 	logger.Info("init apns client success...")
 }
